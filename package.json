@@ -36,7 +36,9 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-simple-sidebar.git"
     },
     "dependencies": {
-        "bootstrap": "5.2.3"
+        "bootstrap": "5.2.3",
+        "shelljs": "0.8.5",
+        "upath": "2.0.1"
     },
     "devDependencies": {
         "autoprefixer": "10.4.14",
@@ -48,6 +50,6 @@
         "pug": "3.0.2",
         "sass": "1.60.0",
         "shelljs": "0.8.5",
-        "upath": "2.0.1"
+        "upath": "^2.0.1"
     }
 }
