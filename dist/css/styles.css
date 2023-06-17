@@ -732,9 +732,10 @@ progress {
   width: 25%;
 }
 
+/**/
 .row-cols-5 > * {
   flex: 0 0 auto;
-  width: 90%;
+  width: 20%;
 }
 
 .row-cols-6 > * {
