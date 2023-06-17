@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Solonne</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    
+
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+    
+        <div class="d-flex" id="wrapper">
+          <!-- Sidebar-->
+          <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">Solonne</div>
+            <div class="list-group list-group-flush">
+              <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#home">Home</a>
+              <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#about">About</a>
+              <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#services">Services</a>
+              <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#tarieven">Tarieven</a>
+              <a class="list-group-item list-group-item-action list-group-item-light p-3" href="#contact">Contact</a>
+            </div>
+          </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle"> <> </button>
+                        
+                    </div>
+                </nav>
+                <!-- Page content  <canvas id="myCanvas" width="800" height="600"></canvas>-->
+                <div class="container-fluid">
+                    <div class='hero'>
+                        <div class="hero-one"></div>
+                        <div class="hero-two"></div>
+                        <h1 class="header-title"><span class="header-primary">Solonne</span><span class="header-sub">Advies in Zorg op Maat</span></h1>
+                      </div>
+                    <!-- Hero Section-->
+                      <!-- Home Section -->
+                      <section id="home" class="section">
+                        <div class="section-content">
+                            <div id="myCanvasContainer"></div>
+                        <h1 class="section-title">Stress?!</h1>
+                        <p class="section-desc">Je bestaat uit meer kleuren dan je denkt!</p>
+                        </div>
+                    </section>
+                    <!-- Cards  -->
+                    
+                    <div class="projcard-container">
+    
+                        <div class="projcard projcard-blue">
+                          <div class="projcard-innerbox">
+                            <img class="projcard-img" src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" />
+                            <div class="projcard-textbox">
+                              <div class="projcard-title">Consulting</div>
+                              <div class="projcard-subtitle">Zzp-begeleiding voor zorgondernemers</div>
+                              <div class="projcard-bar"></div>
+                              <div class="projcard-description">We bieden advies en begeleiding aan zzp'ers in de zorgsector, waaronder beginnende ondernemers en bestaande zorgprofessionals die zelfstandig willen werken. We helpen hen bij het opzetten van hun bedrijf, het ontwikkelen van een strategie en het leggen van een solide basis voor succes.</div>
+                              <div class="projcard-tagbox">
+                               
+                                <span class="projcard-tag">ZzpCoaching</span>
+                                <span class="projcard-tag">ZorgsectorExpertise</span>
+                     
+                       
+                                <span class="projcard-tag">DuurzaamSucces</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="projcard projcard-red">
+                          <div class="projcard-innerbox">
+                            <img class="projcard-img" src="https://images.unsplash.com/photo-1588720832097-3bf8f1b09867?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" />
+                            <div class="projcard-textbox">
+                              <div class="projcard-title">Advies</div>
+                              <div class="projcard-subtitle">Advies aan grootschalige projecten</div>
+                              <div class="projcard-bar"></div>
+                              <div class="projcard-description">
+
+                                We bieden consultancydiensten aan voor grootschalige zorgprojecten, zoals de oprichting van nieuwe zorginstellingen, de implementatie van innovatieve zorgconcepten en het verbeteren van de kwaliteit van zorg. We adviseren op gebieden zoals strategie, organisatieontwikkeling, procesoptimalisatie en kwaliteitsmanagement.
+                              </div>
+                              <div class="projcard-tagbox">
+                                <span class="projcard-tag">InnovatieveZorgConcepten </span>
+                              
+                                <span class="projcard-tag">Kwaliteitsmanagement</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="projcard projcard-green">
+                          <div class="projcard-innerbox">
+                            <img class="projcard-img" src="https://images.unsplash.com/photo-1521198807864-bc8cfc485949?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" />
+                            <div class="projcard-textbox">
+                              <div class="projcard-title">Dagprogramma's</div>
+                              <div class="projcard-subtitle">Biopsychologisch kernprogramma</div>
+                              <div class="projcard-bar"></div>
+                              <div class="projcard-description">We bieden een specifiek kernprogramma aan dat gericht is op het verbeteren van de vitaliteit en gezondheid van cliënten binnen zorgorganisaties en omvat regelmatige sessies op locatie. Het programma wordt aangeboden in verschillende pakketten, zoals 3 maanden, 6 maanden en 12 maanden, met wekelijkse sessies van 2 uur per groep.</div>
+                                <div class="projcard-tagbox">
+                                <span class="projcard-tag">Gezondheidsbevordering</span>
+                                <span class="projcard-tag">LocatieSessies</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="projcard projcard-customcolor" style="--projcard-color: #F5AF41;">
+                          <div class="projcard-innerbox">
+                            <img class="projcard-img" src="https://images.unsplash.com/photo-1611764553921-437fb44f747a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
+                            <div class="projcard-textbox">
+                              <div class="projcard-title">Visualisatie en rapportage</div>
+                              <div class="projcard-subtitle">Statistieken en rapporten</div>
+                              <div class="projcard-bar"></div>
+                              <div class="projcard-description">We bieden uitgebreide statistische analyses en rapporten aan om u te helpen inzicht te krijgen in uw prestaties en ontwikkelingen. Deze rapporten kunnen worden gepersonaliseerd en afgestemd op uw specifieke behoeften en doelstellingen.</div>
+                              <div class="projcard-tagbox">
+                                <span class="projcard-tag">InzichtInData</span>
+                                <span class="projcard-tag">Besluitvorming</span>
+                                <span class="projcard-tag">GezondheidsData</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="projcard projcard-green">
+                            <div class="projcard-innerbox">
+                              <img class="projcard-img" src="https://images.unsplash.com/photo-1581094289810-adf5d25690e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" />
+                              <div class="projcard-textbox">
+                                <div class="projcard-title">Applicatieontwikkeling</div>
+                                <div class="projcard-subtitle">Biopsychologisch kernprogramma</div>
+                                <div class="projcard-bar"></div>
+                                <div class="projcard-description">Naast onze andere diensten, ontwikkelen wij op maat gemaakte applicaties voor zorgorganisaties om processen te vereenvoudigen en efficiëntie te verbeteren. Of u nu een app nodig heeft voor interne communicatie, patiëntbeheer of data-analyse, ons team heeft de expertise om een oplossing te bieden die aan uw behoeften voldoet.</div>
+                                  <div class="projcard-tagbox">
+                                  <span class="projcard-tag">MaatwerkApps</span>
+                                  <span class="projcard-tag">Patiëntbeheer</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                      </div>
+                    
+                    
+                  
+                
+                  <!-- Over Sectie -->
+                    <section class="hero-section">
+                        
+                        <div class="card-grid">
+                           
+                          <a class="card" href="#">
+                            <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+                            <div class="card__content">
+                              <p class="card__category">Hybrid</p>
+                              <h3 class="card__heading">ZorgConsulting</h3>
+                            </div>
+                          </a>
+                          <a class="card" href="#">
+                            <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                            <div class="card__content">
+                              <p class="card__category">Hybrid</p>
+                              <h3 class="card__heading">Bedrijfsontwikkeling</h3>
+                            </div>
+                          </a>
+                          <a class="card" href="#">
+                            <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                            <div class="card__content">
+                              <p class="card__category">Hybrid/Remote</p>
+                              <h3 class="card__heading">Kwaliteitsverbetering</h3>
+                            </div>
+                          </li>
+                          <a class="card" href="#">
+                            <div class="card__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+                            <div class="card__content">
+                              <p class="card__category">Hybrid/Remote</p>
+                              <h3 class="card__heading">PerformanceMetrics</h3>
+                            </div>
+                          </a>
+                        <div>
+                      </section>
+
+
+                      <!-- About me-->
+                      <div class="wrapper">
+                        <div class="name">
+                          Nigel van der Laan
+                        </div>
+                        <div class="content" style="color:black">
+                          <h2>Over mij</h2>
+                          <p>Mijn expertise is opgebouwd door een combinatie van een wetenschappelijke opleiding in de biopsychologie, hands-on ervaring in de gezondheidszorg, 8 jaar veldwerk in IT en FinTech en een aanvullende kwalificatie in Hasya Yoga. Deze unieke mix van vaardigheden stelt mij in staat om effectief bij te dragen aan het welzijn van cliënten met wetenschappelijk bewezen methoden. Door de implementatie van Hasya Yoga en Pranayama-ademhalingstechnieken, in combinatie met analyse technieken, adviseer ik in het proces bij het verhogen van hun vitaliteit, stressverlichting en het bevorderen van de cognitieve functie.
+                      
+                          Daarnaast heb ik ruim 10 jaar ervaring op het gebied van IT-training en advies, specifiek gericht op digitale tools voor data-analyse, websiteontwikkeling, patientenbeheer, duurzame strategien voor zorgondernemers en kwaliteitsmanagement. Ook heb ik waardevolle ervaring opgedaan in het opzetten van PGB-assistentieteams en netwerken, het bieden van gespecialiseerde ambulante ondersteuning en het structureren van dagelijkse schema's voor hulpbehoevenden.</p>
+                      
+                        </div>
+                      </div>
+
+                      <!-- Nieuwe tarieven-->
+                      <div class="container-tarieven">
+                        <div class="basic">
+                          <h2>Consultancy</h2>
+                          <h4>€84,95 per uur, ex. btw</h4>
+                          <h6>Voor zorgondernemers en grootschalige projecten</h6>
+                          <ul class="basic-ul">
+                            <li class="basic-li">Advies</li>
+                            <li class="basic-li">Begeleiding</li>
+                            <li class="basic-li">Meer...</li>
+                          </ul>
+                          <button class="basic-btn">10 min. vrijblijvend gesprek</button>
+                        </div>
+                        <div class="pro">
+                          <h2>Biopsychologisch Kernprogramma</h2>
+                          <h4>€119,95 per uur, exclusief btw.</h4>
+                          <h6>Afnames </h6>
+                          <ul class="pro-ul">
+                            <li class="pro-li">Biopsychologische Metingen</li>
+                            <li class="pro-li">3, 6, 9 maanden</li>
+                            <li class="pro-li">Wekelijkse sessies</li>
+                            <li class="pro-li">2 uur per groep</li>
+                          </ul>
+                   
+                        </div>
+                      </div>
+           
+
+                             
+                            <!-- Contact Section -->
+                            <section id="contact">
+  
+                                <h1 class="section-header">Contact</h1>
+                                
+                                <div class="contact-wrapper">
+                                
+                                <!-- Left contact page --> 
+                                  
+                                  <form id="contact-form" class="form-horizontal" role="form">
+                                     
+                                    <div class="form-group">
+                                      <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+                                      </div>
+                                    </div>
+                              
+                                    <div class="form-group">
+                                      <div class="col-sm-12">
+                                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+                                      </div>
+                                    </div>
+                              
+                                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+                                    
+                                    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                                      <div class="alt-send-button">
+                                        <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                                      </div>
+                                    
+                                    </button>
+                                    
+                                  </form>
+                                  
+                                <!-- Left contact page --> 
+                                  
+                                    <div class="direct-contact-container">
+                              
+                                      <ul class="contact-list">
+                                        <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">3526 EP Utrecht</span></i></li>
+                                        
+                                        <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">Telefoon: 085 0043073</a></span></i></li>
+                                        
+                                        <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">advies@solonne-consulting.nl</a></span></i></li>
+                                        
+                                      </ul>
+                              
+                                      <hr>
+                                      <ul class="social-media-list">
+                                        <li><a href="#" target="_blank" class="contact-icon">
+                                          <i class="fa fa-github" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#" target="_blank" class="contact-icon">
+                                          <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#" target="_blank" class="contact-icon">
+                                          <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="#" target="_blank" class="contact-icon">
+                                          <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                        </li>       
+                                      </ul>
+                                      <hr>
+                              
+                                      <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                              
+                                    </div>
+                                  
+                                </div>
+                                
+                              </section>  
+                                
+                                
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+            // This adds some nice ellipsis to the description:
+            document.querySelectorAll(".projcard-description").forEach(function(box) {
+            $CLAMP(box, {$CLAMP: 6});
+            });
+        </script>
+        <script>
+            let petals = [];
+            const numPetals = 11;
+            const petalWidth = 30;
+            const petalHeight = 80;
+            const radius = 100;
+            let rotation = 0;
+    
+            function setup() {
+                let canvas = createCanvas(200, 100);
+                canvas.parent('myCanvasContainer');
+                
+        
+                let colors = [ "#ddac4f","#cdbfd4","#a54f20","#70ba92","#5e6472", "#d0a29d","#faf3dd","#b8f2e6","#aed9e0","#5e6472"];
+
+                // Initialize petals
+                for (let i = 0; i < numPetals; i++) {
+                    petals.push({
+                        angle: (i * TWO_PI / numPetals),
+                        color: color(colors[i % colors.length])
+                    });
+                }
+
+    
+                colorMode(HSB, 360, 100, 100); // Use HSB color
+                noStroke(); // Don't draw borders
+            }
+    
+            function draw() {
+                background(0); // Clear background
+                translate(width / 2, height / 2); // Move origin to center
+    
+                // Draw each petal
+                for (let petal of petals) {
+                push(); // Save current transformation
+                rotate(petal.angle + rotation); // Rotate
+
+                // Define proportions based on the golden ratio
+                let phi = (1 + Math.sqrt(5)) / 2;
+                let width = petalWidth;
+                let height = width * phi; // Height is width times the golden ratio
+
+                // Draw petal as a complex shape
+                fill(petal.color);
+                beginShape();
+                vertex(0, 0);
+                bezierVertex(width/2, -height/3, width, -height/3, width, 0);
+                bezierVertex(width, height/3, width/2, height/3, 0, 0);
+                endShape(CLOSE);
+
+                pop(); // Restore transformation
+                }
+
+                            rotation += 0.01; // Increase rotation
+                        }
+        </script>
+    <script>
+        document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
+
+    </script>
+    </body>
+
+  
+
+
+</html>
