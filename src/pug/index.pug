@@ -1,73 +1,202 @@
 doctype html
-html(lang='en')
-
-    head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Simple Sidebar - Start Bootstrap Template
-
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
-
-    body
-
-        #wrapper.d-flex
-
-            // Sidebar
-            #sidebar-wrapper.border-end.bg-white
-                .sidebar-heading.border-bottom.bg-light Start Bootstrap 
-                .list-group.list-group-flush
-                    a.list-group-item.list-group-item-action.list-group-item-light.p-3(href='#!') Dashboard
-                    a.list-group-item.list-group-item-action.list-group-item-light.p-3(href='#!') Shortcuts
-                    a.list-group-item.list-group-item-action.list-group-item-light.p-3(href='#!') Overview
-                    a.list-group-item.list-group-item-action.list-group-item-light.p-3(href='#!') Events
-                    a.list-group-item.list-group-item-action.list-group-item-light.p-3(href='#!') Profile
-                    a.list-group-item.list-group-item-action.list-group-item-light.p-3(href='#!') Status
-
-            // Page content wrapper
-            #page-content-wrapper
-
-                // Top navigation
-                nav.navbar.navbar-expand-lg.navbar-light.bg-light.border-bottom
-                    .container-fluid
-                        button#sidebarToggle.btn.btn-primary Toggle Menu
-                        button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
-                            span.navbar-toggler-icon
-                        #navbarSupportedContent.collapse.navbar-collapse
-                            ul.navbar-nav.ms-auto.mt-2.mt-lg-0
-                                li.nav-item.active
-                                    a.nav-link(href='#!') Home 
-                                li.nav-item
-                                    a.nav-link(href='#!') Link
-                                li.nav-item.dropdown
-                                    a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-bs-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                                        | Dropdown
-                                    .dropdown-menu.dropdown-menu-end(aria-labelledby='navbarDropdown')
-                                        a.dropdown-item(href='#!') Action
-                                        a.dropdown-item(href='#!') Another action
-                                        .dropdown-divider
-                                        a.dropdown-item(href='#!') Something else here
-                // Page content
-                .container-fluid
-                    h1.mt-4 Simple Sidebar
-                    p
-                        | The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.
-                    p
-                        | Make sure to keep all page content within the 
-                        code #page-content-wrapper
-                        | . The top navbar is optional, and just for demonstration. Just create an element with the 
-                        code #sidebarToggle
-                        |  ID which will toggle the menu when clicked.
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="description", content="")
+    meta(name="author", content="")
+    title Solonne
+    // Favicon
+    link(rel="icon", type="image/x-icon", href="assets/favicon.ico")
+    // Core theme CSS (includes Bootstrap)
+    link(href="css/styles.css", rel="stylesheet")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js")
+  body
+    // Navigation Bar
+    div#wrapper.d-flex
+      // Sidebar
+      div#sidebar-wrapper.border-end.bg-white
+        div.sidebar-heading.border-bottom.bg-light Solonne
+        div.list-group.list-group-flush
+          a.list-group-item.list-group-item-action.list-group-item-light.p-3(href="#home") Home
+          a.list-group-item.list-group-item-action.list-group-item-light.p-3(href="#about") About
+          a.list-group-item.list-group-item-action.list-group-item-light.p-3(href="#services") Services
+          a.list-group-item.list-group-item-action.list-group-item-light.p-3(href="#tarieven") Tarieven
+          a.list-group-item.list-group-item-action.list-group-item-light.p-3(href="#contact") Contact
+      // Page content wrapper
+      div#page-content-wrapper
+        // Top navigation
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light.border-bottom
+          div.container-fluid
+            button.btn.btn-primary#sidebarToggle <> 
+        // Page content
+        div.container-fluid
+          div.hero
+            div.hero-one
+            div.hero-two
+            h1.header-title
+              span.header-primary Solonne
+              span.header-sub Advies in Zorg op Maat
+          // Hero Section
+          section#home.section
+            div.section-content
+              div#myCanvasContainer
+              h1.section-title Stress?!
+              p.section-desc Je bestaat uit meer kleuren dan je denkt!
+          // Cards
+          div.projcard-container
+            div.projcard.projcard-blue
+              div.projcard-innerbox
+                img.projcard-img(src="https://images.unsplash.com/photo-1493612276216-ee3925520721?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80")
+                div.projcard-textbox
+                  div.projcard-title Consulting
+                  div.projcard-subtitle Zzp-begeleiding voor zorgondernemers
+                  div.projcard-bar
+                  div.projcard-description We bieden advies en begeleiding aan zzp'ers in de zorgsector, waaronder beginnende ondernemers en bestaande zorgprofessionals die zelfstandig willen werken. We helpen hen bij het opzetten van hun bedrijf, het ontwikkelen van een strategie en het leggen van een solide basis voor succes.
+                  div.projcard-tagbox
+                    span.projcard-tag ZzpCoaching
+                    span.projcard-tag ZorgsectorExpertise
+                    span.projcard-tag DuurzaamSucces
+            div.projcard.projcard-red
+              div.projcard-innerbox
+                img.projcard-img(src="https://images.unsplash.com/photo-1588720832097-3bf8f1b09867?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80")
+                div.projcard-textbox
+                  div.projcard-title Advies
+                  div.projcard-subtitle Advies aan grootschalige projecten
+                  div.projcard-bar
+                  div.projcard-description We bieden consultancydiensten aan voor grootschalige zorgprojecten, zoals de oprichting van nieuwe zorginstellingen, de implementatie van innovatieve zorgconcepten en het verbeteren van de kwaliteit van zorg. We adviseren op gebieden zoals strategie, organisatieontwikkeling, procesoptimalisatie en kwaliteitsmanagement.
+                  div.projcard-tagbox
+                    span.projcard-tag InnovatieveZorgConcepten
+                    span.projcard-tag Kwaliteitsmanagement
+            div.projcard.projcard-green
+              div.projcard-innerbox
+                img.projcard-img(src="https://images.unsplash.com/photo-1521198807864-bc8cfc485949?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80")
+                div.projcard-textbox
+                  div.projcard-title Dagprogramma's
+                  div.projcard-subtitle Biopsychologisch kernprogramma
+                  div.projcard-bar
+                  div.projcard-description We bieden een specifiek kernprogramma aan dat gericht is op het verbeteren van de vitaliteit en gezondheid van cliënten binnen zorgorganisaties en omvat regelmatige sessies op locatie. Het programma wordt aangeboden in verschillende pakketten, zoals 3 maanden, 6 maanden en 12 maanden, met wekelijkse sessies van 2 uur per groep.
+                  div.projcard-tagbox
+                    span.projcard-tag Gezondheidsbevordering
+                    span.projcard-tag LocatieSessies
+            div.projcard.projcard-customcolor(style="--projcard-color: #F5AF41;")
+              div.projcard-innerbox
+                img.projcard-img(src="https://images.unsplash.com/photo-1611764553921-437fb44f747a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")
+                div.projcard-textbox
+                  div.projcard-title Visualisatie en rapportage
+                  div.projcard-subtitle Statistieken en rapporten
+                  div.projcard-bar
+                  div.projcard-description We bieden uitgebreide statistische analyses en rapporten aan om u te helpen inzicht te krijgen in uw prestaties en ontwikkelingen. Deze rapporten kunnen worden gepersonaliseerd en afgestemd op uw specifieke behoeften en doelstellingen.
+                  div.projcard-tagbox
+                    span.projcard-tag InzichtInData
+                    span.projcard-tag Besluitvorming
+                    span.projcard-tag GezondheidsData
+            div.projcard.projcard-green
+              div.projcard-innerbox
+                img.projcard-img(src="https://images.unsplash.com/photo-1581094289810-adf5d25690e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80")
+                div.projcard-textbox
+                  div.projcard-title Applicatieontwikkeling
+                  div.projcard-subtitle Biopsychologisch kernprogramma
+                  div.projcard-bar
+                  div.projcard-description Naast onze andere diensten, ontwikkelen wij op maat gemaakte applicaties voor zorgorganisaties om processen te vereenvoudigen en efficiëntie te verbeteren. Of u nu een app nodig heeft voor interne communicatie, patiëntbeheer of data-analyse, ons team heeft de expertise om een oplossing te bieden die aan uw behoeften voldoet.
+                  div.projcard-tagbox
+                    span.projcard-tag MaatwerkApps
+                    span.projcard-tag Patiëntbeheer
+          // Over Sectie
+          section.hero-section
+            div.card-grid
+              a.card(href="#")
+                div.card__background(style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)")
+                div.card__content
+                  p.card__category Hybrid
+                  h3.card__heading ZorgConsulting
+              a.card(href="#")
+                div.card__background(style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)")
+                div.card__content
+                  p.card__category Hybrid
+                  h3.card__heading Bedrijfsontwikkeling
+              a.card(href="#")
+                div.card__background(style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)")
+                div.card__content
+                  p.card__category Hybrid/Remote
+                  h3.card__heading Kwaliteitsverbetering
+              a.card(href="#")
+                div.card__background(style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)")
+                div.card__content
+                  p.card__category Hybrid/Remote
+                  h3.card__heading PerformanceMetrics
+            div
+          // About me
+          div.wrapper
+            div.name Nigel van der Laan
+            div.content(style="color:black")
+              h2 Over mij
+              p Mijn expertise is opgebouwd door een combinatie van een wetenschappelijke opleiding in de biopsychologie, hands-on ervaring in de gezondheidszorg, 8 jaar veldwerk in IT en FinTech en een aanvullende kwalificatie in Hasya Yoga. Deze unieke mix van vaardigheden stelt mij in staat om effectief bij te dragen aan het welzijn van cliënten met wetenschappelijk bewezen methoden. Door de implementatie van Hasya Yoga en Pranayama-ademhalingstechnieken, in combinatie met analyse technieken, adviseer ik in het proces bij het verhogen van hun vitaliteit, stressverlichting en het bevorderen van de cognitieve functie.
+              p Daarnaast heb ik ruim 10 jaar ervaring op het gebied van IT-training en advies, specifiek gericht op digitale tools voor data-analyse, websiteontwikkeling, patientenbeheer, duurzame strategien voor zorgondernemers en kwaliteitsmanagement. Ook heb ik waardevolle ervaring opgedaan in het opzetten van PGB-assistentieteams en netwerken, het bieden van gespecialiseerde ambulante ondersteuning en het structureren van dagelijkse schema's voor hulpbehoevenden.
+          // Nieuwe tarieven
+          div.container-tarieven
+            div.basic
+              h2 Consultancy
+              h4 €84,95 per uur, ex. btw
+              h6 Voor zorgondernemers en grootschalige projecten
+              ul.basic-ul
+                li.basic-li Advies
+                li.basic-li Begeleiding
+                li.basic-li Meer...
+              button.basic-btn 10 min. vrijblijvend gesprek
+            div.pro
+              h2 Biopsychologisch Kernprogramma
+              h4 €119,95 per uur, exclusief btw.
+              h6 Afnames
+              ul.pro-ul
+                li.pro-li Biopsychologische Metingen
+                li.pro-li 3, 6, 9 maanden
+                li.pro-li Wekelijkse sessies
+                li.pro-li 2 uur per groep
+          // Contact Section
+          section#contact
+            h1.section-header Contact
+            div.contact-wrapper
+              // Left contact page
+              form#contact-form.form-horizontal(role="form")
+                div.form-group
+                  div.col-sm-12
+                    input.form-control#name(type="text", placeholder="NAME", name="name", value="", required)
+                div.form-group
+                  div.col-sm-12
+                    input.form-control#email(type="email", placeholder="EMAIL", name="email", value="", required)
+                textarea.form-control(rows="10", placeholder="MESSAGE", name="message", required)
+                button.btn.btn-primary.send-button#submit(type="submit", value="SEND")
+                  div.alt-send-button
+                    i.fa.fa-paper-plane
+                    span.send-text SEND
+              // Left contact page
+              div.direct-contact-container
+                ul.contact-list
+                  li.list-item
+                    i.fa.fa-map-marker.fa-2x
+                    span.contact-text.place 3526 EP Utrecht
+                  li.list-item
+                    i.fa.fa-phone.fa-2x
+                    span.contact-text.phone
+                      a(href="tel:1-212-555-5555", title="Give me a call") Telefoon: 085 0043073
+                  li.list-item
+                    i.fa.fa-envelope.fa-2x
+                    span.contact-text.gmail
+                      a(href="mailto:#", title="Send me an email") advies@solonne-consulting.nl
+                hr
+                ul.social-media-list
+                  li
+                    a.contact-icon(href="#", target="_blank")
+                      i.fa.fa-github(aria-hidden="true")
+                  li
+                    a.contact-icon(href="#", target="_blank")
+                      i.fa.fa-codepen(aria-hidden="true")
+                  li
+                    a.contact-icon(href="#", target="_blank")
+                      i.fa.fa-twitter(aria-hidden="true")
+                  li
+                    a.contact-icon(href="#", target="_blank")
+                      i.fa.fa-instagram(aria-hidden="true")
+                hr
+                div.copyright &copy; ALL OF THE RIGHTS RESERVED
